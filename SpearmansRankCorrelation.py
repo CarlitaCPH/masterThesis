@@ -5,7 +5,7 @@ import scipy.stats as stats
 import matplotlib.pyplot as plt
 
 # Define the filename
-filename = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/CDR_data_Oct_17_2024.csv'
+filename = '/Thesis files/CDR_data_Oct_17_2024.csv'
 
 # Read the CSV file into a pandas DataFrame
 try:

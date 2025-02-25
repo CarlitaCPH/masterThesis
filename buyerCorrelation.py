@@ -5,7 +5,7 @@ import scipy.stats as stats
 from matplotlib import rcParams
 
 # Define the filename
-filename = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/CDR_data_Oct_17_2024.csv'
+filename = 'Thesis files/CDR_data_Oct_17_2024.csv'
 
 # Read the CSV file into a pandas DataFrame
 try:
@@ -88,7 +88,7 @@ for i, purchaser in enumerate(average_price_by_buyer_sorted.index):
             ha='center', va='bottom', fontsize=16)
 
 # Show the plot
-path_name = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/python_folder/buyer_comparison'
+path_name = 'Thesis files/python_folder/buyer_comparison'
 plt.savefig(path_name, bbox_inches="tight")
 plt.show()
 plt.close()

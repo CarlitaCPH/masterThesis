@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 #check under view command pallete, interpretor, version it runs on in case libraries dont work
 
 # Define the filename
-filename = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/CDR_data_Oct_17_2024.csv'
+filename = 'Thesis files/CDR_data_Oct_17_2024.csv'
 
 # Read the CSV file into a pandas DataFrame
 try:

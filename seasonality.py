@@ -5,7 +5,7 @@ import seaborn as sns
 from matplotlib import rcParams
 
 # Define the filename
-filename = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/CDR_data_Oct_17_2024.csv'
+filename = 'Thesis files/CDR_data_Oct_17_2024.csv'
 
 # Read the CSV file into a pandas DataFrame
 try:
@@ -81,13 +81,13 @@ plt.xticks(rotation=45)
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 
 # Save the line plot
-lineplot_path = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/python_folder/price_per_ton_lineplot.png'
+lineplot_path = 'Thesis files/python_folder/price_per_ton_lineplot.png'
 plt.savefig(lineplot_path)
 print(f"Line plot saved to {lineplot_path}")
 plt.close()  # Close the figure to prevent display issues
 
 # Export summary statistics to Excel
-output_filename = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/python_folder/Seasonality.xlsx'
+output_filename = 'Thesis files/python_folder/Seasonality.xlsx'
 
 # Convert summary to DataFrame for export
 summary_df = summary.to_frame(name='price_per_ton_EUR_summary')
@@ -123,7 +123,7 @@ plt.legend(title="Year", loc="upper right")
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 
 # Save the figure
-seasonality_plot_path = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/python_folder/monthly_seasonality_by_year.png'
+seasonality_plot_path = 'Thesis files/python_folder/monthly_seasonality_by_year.png'
 plt.savefig(seasonality_plot_path)
 
 # Show the plot

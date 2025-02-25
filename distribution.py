@@ -5,7 +5,7 @@ import seaborn as sns
 from matplotlib import rcParams
 
 # Define the filename
-filename = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/CDR_data_Oct_17_2024.csv'
+filename = 'Thesis files/CDR_data_Oct_17_2024.csv'
 
 # Read the CSV file into a pandas DataFrame
 try:
@@ -77,7 +77,7 @@ plt.ylabel('Frequency')
 plt.grid(axis='y', linestyle='--', alpha=0.7)
 
 # Save the histogram
-histogram_path = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/python_folder/price_per_ton_histogram.png'
+histogram_path = 'Thesis files/python_folder/price_per_ton_histogram.png'
 plt.savefig(histogram_path)
 print(f"Histogram saved to {histogram_path}")
 plt.close()  # Close the figure to prevent it from displaying in interactive environments
@@ -90,7 +90,7 @@ plt.title('Boxplot of Price per Ton of BCR (EUR/ton BCR)')
 plt.xlabel('Price per Ton (EUR/ton BCR)')
 
 # Save the boxplot
-boxplot_path = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/python_folder/price_per_ton_boxplot.png'
+boxplot_path = 'Thesis files/python_folder/price_per_ton_boxplot.png'
 plt.savefig(boxplot_path)
 print(f"Boxplot saved to {boxplot_path}")
 plt.close()
@@ -117,7 +117,7 @@ transaction_summary = pd.DataFrame({
 summary_df = summary.to_frame(name='price_per_ton_EUR_summary')
 
 # Export summary to Excel
-output_filename = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/python_folder/Statistical_Summary.xlsx'
+output_filename = 'Thesis files/python_folder/Statistical_Summary.xlsx'
 
 with pd.ExcelWriter(output_filename, engine='openpyxl') as writer:
     summary_df.to_excel(writer, sheet_name='Statistical summary')

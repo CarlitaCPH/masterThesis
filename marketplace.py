@@ -10,7 +10,7 @@ rcParams['font.family'] = 'Arial'
 rcParams['font.size'] = 18
 
 # Define the filename
-filename = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/CDR_data_Oct_17_2024.csv'
+filename = 'Thesis files/CDR_data_Oct_17_2024.csv'
 
 # Read the CSV file into a pandas DataFrame
 try:
@@ -79,7 +79,7 @@ plt.figtext(0.5, -0.1, "Top 5 by amount of transactions that published a price",
             ha="center", fontsize=10, style="italic")
 
 # Save the plot
-path_name = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/python_folder/marketplace_comparison'
+path_name = 'Thesis files/python_folder/marketplace_comparison'
 plt.savefig(path_name, bbox_inches="tight")
 print("Plot saved successfully as marketplace_comparison.png.")
 plt.close()  # Close the figure to prevent it from displaying in interactive environments
@@ -190,7 +190,7 @@ plt.legend(title=f'Above 305 €/ton BCR by Marketplace', fontsize=12, title_fon
 plt.grid(True, linestyle='--', alpha=0.6)
 
 # Save the plot
-plot_path = '/Users/carlasoleta/Library/CloudStorage/GoogleDrive-carla.soleta@gmail.com/My Drive/Thesis files/python_folder/above_threshold_marketplace_improved.png'
+plot_path = 'Thesis files/python_folder/above_threshold_marketplace_improved.png'
 plt.savefig(plot_path, bbox_inches="tight")
 
 # Print success message
